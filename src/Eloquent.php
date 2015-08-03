@@ -2,7 +2,7 @@
 
 namespace Jgraffite\Snake2camel;
 //use \Jgraffite\Snack2camel\QueryBuilder as QueryBuilder; // MyModel should now use your MyQueryBuilder instead of the default which I commented out above
-use Illuminate\Database\Eloquent\Model as Model;
+use Illuminate\Database\Eloquent\Model as Model;;
 
 class Eloquent extends Model
 {
