@@ -7,21 +7,60 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-Package to Framework Laravel able getting and setting model fields in snakeCase through camelCase
+Package to Laravel Framework able getting and setting model fields in snakeCase through camelCase
+
+--
+
+Pacote para o Framework Laravel que permite setar e obter os campos de um modelo snakeCase em camelCase
 
 ## Install
 
 Via Composer
 
+First, you must to install the Laravel Packager, of [Jeroen-G][https://github.com/Jeroen-G/laravel-packager].
+
+Then, you able to install this package. To do it, run the following command in the command line, where is your laravel instalation is on:
+
 ``` bash
-$ composer require league/:package_name
+$ php artisan packager:get https://github.com/jgraffite/snake2camel
+```
+
+Finally, you must run the following command:
+
+``` bash
+$ composer dumpautoload
 ```
 
 ## Usage
 
+If you already using the Laravel Command Line to create a model, you will get something like this:
+
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+<?php
+namespace App;
+
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+
+class SomeModel extends Model
+{
+...
+}
+```
+
+Simply, remove the line "use Illuminate\Database\Eloquent\Model;" and replace "extends Model" to "extends \Model", like this:
+
+
+``` php
+<?php
+namespace App;
+
+use Illuminate\Auth\Authenticatable;
+
+class SomeModel extends \Model
+{
+...
+}
 ```
 
 ## Change log
