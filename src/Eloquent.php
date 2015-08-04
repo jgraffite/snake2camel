@@ -74,4 +74,27 @@ class Eloquent extends Model
     }
 
 
+    /**
+     * Selecionar algo de acordo com um FULL TEXT
+     *
+     * @param $fields
+     * @param $keywords
+     * @return mixed
+     */
+    public static function whereFullTextMatch($fields, $keywords)
+    {
+        $keyword = !is_array($keywords) ? array("'{$keywords}'") : $keywords;
+        $matchArray = $fields;
+        $columns = array();
+        foreach($matchArray as $column)
+        {
+            $columns[] = snake_case($column);
+        }
+        $match = implode(',', $columns);
+        $result =  self::whereRaw('MATCH('.$match.') AGAINST (? IN BOOLEAN MODE)', $keyword);
+
+        return $result;
+    }
+
+
 }
