@@ -75,15 +75,20 @@ To set a model field, where your really name in table database is "some_column":
 
 $modelObject = new SomeModel;
 $modelObject->someColumn = "any value";
+$modelObject->save();
 
-$getItem = SomeModel::find(1, ['someColumn']); #Get a model and retrieve only one specific column
+----
+
+$item = SomeModel::find(1, ['someColumn']); #Get a model and retrieve only one specific column
+echo $item->someColumn . PHP_EOL;
+echo $item->some_column; #This will print the samething of the above code
 ```
 
 You also to use a special function to make "where conditions" with FULL TEXT. See how do it:
 
 ``` php
 <?php
-$getItem = Somemodel::whereFullTextMatch(['column1','column2'], 'query words')->get();
+$item = Somemodel::whereFullTextMatch(['column1','column2'], 'query words')->get();
 ```
 
 ## Security
