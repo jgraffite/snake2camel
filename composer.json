@@ -1,17 +1,17 @@
 {
     "name": "jgraffite/snake2camel",
-    "description": ":package_description",
+    "description": "A Framework Laravel Package for getting and setting model fields in snakeCase through camelCase",
     "keywords": [
         "league",
-        ":package_name"
+        "jgraffite/snake2case"
     ],
-    "homepage": "https://github.com/thephpjgraffite/snack2camel",
+    "homepage": "https://github.com/jgraffite/snake2camel",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Jorge Luis Malaquias",
+            "email": "jorge@macrobol.com",
+            "homepage.empty": ":author_website",
             "role": "Developer"
         }
     ],
