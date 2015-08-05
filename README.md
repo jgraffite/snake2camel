@@ -97,7 +97,7 @@ If you discover any security related issues, please email jorge@macrobol.com ins
 
 ## Credits
 
-- [Jorge Luis Malaquias][mailto:jorge@macrobol.com]
+- [Jorge Luis Malaquias](mailto:jorge@macrobol.com)
 
 ## License
 
