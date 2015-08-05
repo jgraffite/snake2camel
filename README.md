@@ -97,7 +97,7 @@ If you discover any security related issues, please email jorge@macrobol.com ins
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information. :D
 
 [ico-version]: https://img.shields.io/packagist/v/jgraffite/snake2camel.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
