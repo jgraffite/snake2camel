@@ -95,10 +95,6 @@ $item = Somemodel::whereFullTextMatch(['column1','column2'], 'query words')->get
 
 If you discover any security related issues, please email jorge@macrobol.com instead of using the issue tracker.
 
-## Credits
-
-- [Jorge Luis Malaquias](mailto:jorge@macrobol.com)
-
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
@@ -111,38 +107,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [ico-downloads]: https://img.shields.io/packagist/dt/jgraffite/snake2camel.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/jgraffite/snake2camel
-[link-downloads]: https://packagist.org/packages/jgraffite/snake2camel
-[link-author]: https://github.com/jgraffite
-
-
-
-## Change log
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-
-## Security
-
-If you discover any security related issues, please email jorge@macrobol.com instead of using the issue tracker.
-
-## Credits
-
-- [Jorge Luis Malaquias][mailto:jorge@macrobol.com]
-
-## License
-
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-[ico-version]: https://img.shields.io/packagist/v/jgraffite/snake2camel.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/jgraffite/snake2camel/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/jgraffite/snake2camel.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/jgraffite/snake2camel.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/jgraffite/snake2camel.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/jgraffite/snake2camel
-[link-travis]: https://travis-ci.org/jgraffite/snake2camel
-[link-scrutinizer]: https://scrutinizer-ci.com/g/jgraffite/snake2camel/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/jgraffite/snake2camel
 [link-downloads]: https://packagist.org/packages/jgraffite/snake2camel
 [link-author]: https://github.com/jgraffite
