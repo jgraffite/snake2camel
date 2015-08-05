@@ -17,23 +17,26 @@ Pacote para o Framework Laravel que permite setar e obter os campos de um modelo
 
 Via Composer
 
-First, you must to install the Laravel Packager, of [Jeroen-G][https://github.com/Jeroen-G/laravel-packager].
-
-Then, you able to install this package. To do it, run the following command in the command line, where is your laravel instalation is on:
+To install this package, you only have to run this command:
 
 ``` bash
-$ php artisan packager:get https://github.com/jgraffite/snake2camel
+$ composer require jgraffite/snake2camel
 ```
 
-Finally, you must run the following command:
+Then, you need to add the provider that package, on the Laravel config/app.php file, like this:
 
-``` bash
-$ composer dumpautoload
+``` php
+/*
+ * Application Service Providers...
+ */
+ [...]
+
+ Jgraffite\Snake2camel\Snake2camelServiceProvider::class,
 ```
 
 ## Usage
 
-If you already using the Laravel Command Line to create a model, you will get something like this:
+If you using the Laravel Command Line to create a model, you will get something like this:
 
 ``` php
 <?php
@@ -63,6 +66,20 @@ class SomeModel extends \Model
 }
 ```
 
+Now, you is ready to use the package functions, for example:
+
+To set a model field, where your really name in table database is "some_column":
+
+``` php
+<?php
+
+$modelObject = new SomeModel;
+$modelObject->someColumn = "any value";
+
+$getItem = SomeModel::find(1, ['someColumn']); #Get a model and retrieve only one specific column
+```
+
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
@@ -83,7 +100,7 @@ If you discover any security related issues, please email jorge@macrobol.com ins
 
 ## Credits
 
-- [:author_name][link-author]
+- [Jorge Luis Malaquias][mailto:jorge@macrobol.com]
 - [All Contributors][link-contributors]
 
 ## License
