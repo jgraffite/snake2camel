@@ -3,7 +3,8 @@
     "description": "A Framework Laravel Package for getting and setting model fields in snakeCase through camelCase",
     "keywords": [
         "league",
-        "jgraffite/snake2case"
+        "jgraffite",
+        "snake2case"
     ],
     "homepage": "https://github.com/jgraffite/snake2camel",
     "license": "MIT",
@@ -11,7 +12,7 @@
         {
             "name": "Jorge Luis Malaquias",
             "email": "jorge@macrobol.com",
-            "homepage.empty": ":author_website",
+            "homepage_empty": ":author_website",
             "role": "Developer"
         }
     ],
