@@ -38,7 +38,7 @@ Then, you need to add the provider that package, on the Laravel config/app.php f
 
 ## Usage
 
-If you using the Laravel Command Line to create a model, you will get something like this:
+If you use the Laravel Command Line to create a model, you will get something like this:
 
 ``` php
 <?php
@@ -86,7 +86,7 @@ echo $item->someColumn . PHP_EOL;
 echo $item->some_column; #This will print the samething of the above code
 ```
 
-You also to use a special function to make "where conditions" with FULL TEXT. See how do it:
+You also use a special function to make "where conditions" with FULL TEXT. See how do it:
 
 ``` php
 <?php
