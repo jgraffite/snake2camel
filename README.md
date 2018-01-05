@@ -2,10 +2,6 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
 
 Package to Laravel Framework able getting and setting model fields in snakeCase through camelCase
 
@@ -21,6 +17,12 @@ To install this package, you only have to run this command:
 
 ``` bash
 $ composer require jgraffite/snake2camel
+```
+
+* If you are using Laravel 5.4 or lower
+
+``` bash
+$ composer require jgraffite/snake2camel:1.0-dev
 ```
 
 Then, you need to add the provider that package, on the Laravel config/app.php file, like this:
