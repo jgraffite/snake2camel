@@ -1,6 +1,7 @@
 {
     "name": "jgraffite/snake2camel",
     "description": "A Laravel Framework Package for getting and setting model fields in snakeCase through camelCase",
+    "version": "1.1",
     "keywords": [
         "laravel",
         "models",
@@ -41,7 +42,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.1"
+            "dev-master": "1.1-dev"
         }
     }
 }
