@@ -68,9 +68,9 @@ class SomeModel extends \Model
 }
 ```
 
-Now, you is ready to use the package functions, for example:
+Now, you are ready to use the package functions, for example:
 
-To set a model field, where your really name in table database is "some_column":
+To set a model field, where its really name in table database is "some_column":
 
 ``` php
 <?php
@@ -83,10 +83,10 @@ $modelObject->save();
 
 $item = SomeModel::find(1, ['someColumn']); #Get a model and retrieve only one specific column
 echo $item->someColumn . PHP_EOL;
-echo $item->some_column; #This will print the samething of the above code
+echo $item->some_column; #This will print the same of the above code
 ```
 
-You also use a special function to make "where conditions" with FULL TEXT. See how do it:
+You can also use a special function to make "where conditions" with FULL TEXT. See how do it:
 
 ``` php
 <?php
@@ -95,7 +95,7 @@ $item = Somemodel::whereFullTextMatch(['column1','column2'], 'query words')->get
 
 ## Security
 
-If you discover any security related issues, please email jorge@macrobol.com instead of using the issue tracker.
+If you discover any security issues, please e-mail jorge@macrobol.com instead of using the issue tracker.
 
 ## License
 
