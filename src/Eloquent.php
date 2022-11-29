@@ -3,6 +3,7 @@
 namespace Jgraffite\Snake2camel;
 //use \Jgraffite\Snack2camel\QueryBuilder as QueryBuilder; // MyModel should now use your MyQueryBuilder instead of the default which I commented out above
 use Illuminate\Database\Eloquent\Model as Model;;
+use Illuminate\Support\Str;
 
 class Eloquent extends Model
 {
@@ -16,13 +17,13 @@ class Eloquent extends Model
     //@override
     public function getAttribute($key)
     {
-        return parent::getAttribute(snake_case($key));
+        return parent::getAttribute(Str::snake($key));
     }
 
     //@override
     public function setAttribute($key, $value)
     {
-        return parent::setAttribute(snake_case($key), $value);
+        return parent::setAttribute(Str::snake($key), $value);
     }
 
 
@@ -35,7 +36,7 @@ class Eloquent extends Model
         if (count($fields) == 0) return NULL;
         $newFields = [];
         foreach ($fields as $field) {
-            $newFields[] = snake_case($field);
+            $newFields[] = Str::snake($field);
         }
         return $newFields;
     }
@@ -54,12 +55,12 @@ class Eloquent extends Model
         foreach($array as $key => $value) {
             if (is_object($value) || is_array($value) ) {
                 if (is_object($value) && property_exists($value, 'toJson')) $value = json_decode($value->toJson());
-                $key = (is_numeric($key)) ? intval($key) : camel_case($key);
+                $key = (is_numeric($key)) ? intval($key) : Str::camel($key);
                 $return[$key] = (is_array($value)) ? $value : $this->toArrayCamel($value);
 
             }
             else {
-                $key = (is_numeric($key)) ? intval($key) : camel_case($key);
+                $key = (is_numeric($key)) ? intval($key) : Str::camel($key);
                 $return[$key] = $value;
             }
         }
@@ -88,7 +89,7 @@ class Eloquent extends Model
         $columns = array();
         foreach($matchArray as $column)
         {
-            $columns[] = snake_case($column);
+            $columns[] = Str::snake($column);
         }
         $match = implode(',', $columns);
         $result =  self::whereRaw('MATCH('.$match.') AGAINST (? IN BOOLEAN MODE)', $keyword);
