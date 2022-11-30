@@ -14,7 +14,7 @@
         {
             "name": "Jorge Luis Malaquias",
             "email": "jorge@macrobol.com",
-            "homepage_empty": ":author_website",
+            "homepage": "www.jgraffite.com",
             "role": "Developer"
         }
     ],
@@ -41,7 +41,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.2.1-dev"
+            "dev-master": "2.0-dev"
         }
     }
 }
