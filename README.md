@@ -9,7 +9,7 @@ Package to Laravel Framework able getting and setting model fields in snakeCase 
 
 Pacote para o Framework Laravel que permite setar e obter os campos de um modelo snakeCase em camelCase
 
-## Install
+## Installation
 
 Via Composer
 
@@ -29,10 +29,9 @@ Then, you need to add the provider that package, on the Laravel config/app.php f
 
 ``` php
 /*
- * Application Service Providers...
+ * Package Service Providers...
  */
  [...]
-
  Jgraffite\Snake2camel\Snake2camelServiceProvider::class,
 ```
 
